@@ -140,12 +140,13 @@ main .colonna{
 }
 /* Fine parte in comune sezione main a colonne */
 
+
+
 /* Inizio parte colonne laterali */
 aside{
     width: 20%;
     display: inline-block;
 }
-
 
 .immagine-aside{
     width: 100%;
