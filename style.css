@@ -20,7 +20,7 @@ header .header{
 }
 
 .logo{
-    width: 20%;
+    height: 70px;
     border-right: 1px solid rgba(0, 0, 0,0.2);
     padding-right: 20px;
     margin-bottom: 50px;
@@ -47,6 +47,8 @@ header .top-section{
     width: 100%;
     margin: 50px 0;
     position: relative;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .overlay-banner{
@@ -55,7 +57,6 @@ header .top-section{
     left: 0;
     width: 100%;
     height: 500px;
-    border-radius: 10px;
     background-color: rgba(0, 0, 0,0.2);
     z-index: 1;
 }
@@ -63,7 +64,6 @@ header .top-section{
 #banner-header{
     width: 100%;
     height: 500px;
-    border-radius: 10px;
     position: relative;
     object-fit: cover;
 
@@ -110,6 +110,13 @@ main .title-main{
 /* Inizio parte suddivisa in colonne */
 
 /* Parti in comune sezione main a colonne */
+/* Clearfix per float */
+main::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .overlay{
     position: absolute;
     top: 0;
@@ -120,6 +127,7 @@ main .title-main{
     background-color: rgba(0, 0, 0,0.2);
     z-index: 1;
 }
+
 aside h4{
     margin-top: 20px;
     color:rgba(0, 0, 0,0.6);
@@ -129,14 +137,15 @@ aside h4{
 aside p{
     color: gray;
 }
+
 main .colonna{  
     float: left;
     margin-bottom: 20px;  
-
 }
 
 .contenitore-img{
     position: relative;
+    
 }
 /* Fine parte in comune sezione main a colonne */
 
@@ -145,7 +154,6 @@ main .colonna{
 /* Inizio parte colonne laterali */
 aside{
     width: 20%;
-    display: inline-block;
 }
 
 .immagine-aside{
@@ -178,16 +186,11 @@ main .middle-section{
 /* Fine parte colonna centrale */
 
 
-/* Clearfix per float */
-main::after{
-    content: "";
-    display: table;
-    clear: both;
-}
-
 /* Fine parte suddivisa in colonne */
 
+
 /* Fine main */
+
 
 /* Inizio footer */
 #hearts{
